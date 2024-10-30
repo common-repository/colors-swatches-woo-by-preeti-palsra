@@ -1,0 +1,132 @@
+/* variables */
+:root {
+  /* colors */
+  --cc9-color-primary-hsl: 250, 84%, 54%;
+  --cc9-color-bg-hsl: 0, 0%, 100%;
+  --cc9-color-contrast-high-hsl: 230, 7%, 23%;
+  --cc9-color-contrast-higher-hsl: 230, 13%, 9%;
+  --cc9-color-contrast-medium-hsl: 225, 4%, 47%;
+
+  /* spacing */
+  --cc9-space-2xs: 0.375rem;
+  --cc9-space-xs: 0.5rem;
+
+  /* typography */
+  --cc9-text-sm: 0.833rem;
+}
+
+@media(min-width: 64rem){
+  :root {
+    /* spacing */
+    --cc9-space-2xs: 0.5625rem;
+    --cc9-space-xs: 0.75rem;
+
+    /* typography */
+    --cc9-text-sm: 1rem;
+  }
+}
+
+/* component */
+:root {
+  --color-swatches-gap: var(--cc9-space-2xs);
+  --color-swatch-size: 32px;
+  --color-swatch-radius: 50%;
+}
+
+
+
+.swatches-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.swatch-label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.swatch-label{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  transition: border-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+.swatch-label input[type="radio"] {
+  width: 30px;
+  height: 30px;
+}
+.swatch-label.activeSwatch {
+  border-color: #000;
+  transform: scale(1.1);
+}
+
+.swatch-label:hover {
+  border-color: #888;
+}
+
+fieldset.color-swatches.js-color-swatches {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  
+}
+.activeSwatch input[type="radio"]:checked::before {
+  border-color: hsla(var(--cc9-color-contrast-higher-hsl), 0.8);
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+}
+
+.woocommerce .quantity input[type=number] {
+  width: 100%;
+}
+
+
+.ag-grid-container.sizes-custom h5 {
+  width: 100%;
+}
+.sizes-custom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.size-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+.size-item label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.grid-price-one {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.sizeInputVariationc {
+  max-width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+.custom-color-var a{
+  color:#fff;
+}

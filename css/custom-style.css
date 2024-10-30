@@ -1,0 +1,23 @@
+#anagha_p_swatches_data .attribute_swatch_label {
+    width: 20%;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+#anagha_p_swatches_data .attribute_swatch_type {
+    width: 100%;
+}
+
+
+#anagha_p_swatches_data .color-input input {
+    width: 100px;
+    padding: 2px;
+}
+
+#anagha_p_swatches_data .image-url {
+    width: 70%;
+}
+
+#anagha_p_swatches_data .upload-image-button {
+    margin-left: 5px;
+}
